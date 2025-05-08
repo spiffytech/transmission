@@ -447,6 +447,7 @@ export class OverflowMenu extends EventTarget {
       section.append(divider);
       const logoutText = this.action_manager.text('logout');
       actions.logout = make_button(section, logoutText, 'logout', on_click);
+      actions.logout.dataset.testid = 'logout';
     }
 
     // HELP
